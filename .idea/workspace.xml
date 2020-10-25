@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5957f31-194f-43df-8429-86b08b7d90ae" name="Default Changelist" comment="" />
+    <list default="true" id="b5957f31-194f-43df-8429-86b08b7d90ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascript/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/getanime.php" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascript/getanime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascript/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +23,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1iTW2puU5vLByXPDCadJVBbvlpG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,6 +53,7 @@
       <workItem from="1601931863053" duration="22410000" />
       <workItem from="1602115546523" duration="58860000" />
       <workItem from="1603110130890" duration="1743000" />
+      <workItem from="1603288423140" duration="13637000" />
     </task>
     <servers />
   </component>
@@ -66,5 +77,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.26.1920.1040@0.0.1920.1040" timestamp="1601933747935" />
+    <state x="236" y="0" width="1528" height="1028" maximized="true" key="dock-window-1" timestamp="1603471537718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="236" y="0" width="1528" height="1028" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603459738398" />
+    <state x="236" y="0" width="1528" height="1028" maximized="true" key="dock-window-1/0.0.1920.1040/1920.26.1920.1040@1920.26.1920.1040" timestamp="1603471537718" />
   </component>
 </project>

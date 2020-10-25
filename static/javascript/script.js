@@ -5,7 +5,7 @@ function createAnimeHTML()
         '<div class="borderPara text-center">\n' +
         '<h2>Insert new Anime</h2>\n' +
         '</div>\n' +
-        '<form method="post" action="admin.php">\n' +
+        '<form action="#" onsubmit="createAnime();return false">\n' +
         '<label>English Title</label>\n' +
         '<input type ="text" name="txtEnTitle"><br>\n' +
         '<label>Japanese Title</label>\n' +
@@ -78,7 +78,7 @@ function modifyAnimeHTML()
         '<div class="borderPara text-center">\n' +
         '<h2>Modify Anime</h2>\n' +
         '</div>\n' +
-        '<form method="post" action="admin.php">\n' +
+        '<form action="#" onsubmit="modifyAnime();return false">\n' +
         '<div class="animeList">\n' +
         '</div>\n' +
         '<label>English Title</label>\n' +

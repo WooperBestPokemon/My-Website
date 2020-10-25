@@ -1,4 +1,6 @@
 <?php
+//todo - Add some security here !
+
 $query = $_GET['query'];
 
 $servername = "localhost";

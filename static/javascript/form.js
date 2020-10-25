@@ -23,3 +23,61 @@ function showAnime(id)
     xmlhttp.open("GET","static/javascript/getanime.php?query="+id,true);
     xmlhttp.send();
 }
+function createAnime()
+{
+    var id = document.getElementById("idAnime").value;
+    var title = document.getElementById("txtEnTitle").value;
+    var titleJPN = document.getElementById("txtJaTitle").value;
+    var synopsys = document.getElementById("textSynopsis").value;
+    var genre1 = document.getElementById("selGenre1").value;
+    var genre2 = document.getElementById("selGenre2").value;
+    var review = document.getElementById("textReview").value;
+    var scoreVisual = document.getElementById("numScoreVisual").value;
+    var scoreStory = document.getElementById("numScoreStory").value;
+    var scoreCharacter = document.getElementById("numScoreCharacter").value;
+    var scorePacing = document.getElementById("numScorePacing").value;
+    var scoreMusic = document.getElementById("numScoreMusic").value;
+    var img = document.getElementById("fileImage").value;
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            writeMessage(title + " has been created successfully :3");
+        }
+    };
+    xmlhttp.open("GET","static/javascript/createAnime.php?id="+id+"&title="+title+"&titleJPN="+titleJPN+"&synopsys="+synopsys+"&genre1="+genre1+"&genre2="+genre2+"&review="+review+"&scoreVisual="+scoreVisual+"&scoreStory="+scoreStory+"&scoreCharacter="+scoreCharacter+"&scorePacing="+scorePacing+"&scoreMusic="+scoreMusic+"&img="+img,true);
+    xmlhttp.send();
+}
+function modifyAnime()
+{
+    var id = document.getElementById("idAnime").value;
+    var title = document.getElementById("txtEnTitle").value;
+    var titleJPN = document.getElementById("txtJaTitle").value;
+    var synopsys = document.getElementById("textSynopsis").value;
+    var genre1 = document.getElementById("selGenre1").value;
+    var genre2 = document.getElementById("selGenre2").value;
+    var review = document.getElementById("textReview").value;
+    var scoreVisual = document.getElementById("numScoreVisual").value;
+    var scoreStory = document.getElementById("numScoreStory").value;
+    var scoreCharacter = document.getElementById("numScoreCharacter").value;
+    var scorePacing = document.getElementById("numScorePacing").value;
+    var scoreMusic = document.getElementById("numScoreMusic").value;
+    var img = document.getElementById("fileImage").value;
+    //todo - Modify review and Synopsys
+    synopsys = synopsys.replace(/'/gi, "\\'")
+    review = review.replace(/'/gi, "\\'")
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            writeMessage(title + " has been modified successfully :D");
+        }
+    };
+    xmlhttp.open("GET","static/javascript/modifyAnime.php?id="+id+"&title="+title+"&titleJPN="+titleJPN+"&synopsys="+synopsys+"&genre1="+genre1+"&genre2="+genre2+"&review="+review+"&scoreVisual="+scoreVisual+"&scoreStory="+scoreStory+"&scoreCharacter="+scoreCharacter+"&scorePacing="+scorePacing+"&scoreMusic="+scoreMusic+"&img="+img,true);
+    xmlhttp.send();
+}
+
+function writeMessage(str)
+{
+    //todo - create a small message in html then disappears after 3 seconds
+}
