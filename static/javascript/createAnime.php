@@ -1,7 +1,6 @@
 <?php
 //todo - Add some security here !
 
-$id = $_GET['id'];
 $title = $_GET['title'];
 $titleJPN = $_GET['titleJPN'];
 $synopsys = $_GET['synopsys'];

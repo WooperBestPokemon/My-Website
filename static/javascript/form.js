@@ -25,7 +25,6 @@ function showAnime(id)
 }
 function createAnime()
 {
-    var id = document.getElementById("idAnime").value;
     var title = document.getElementById("txtEnTitle").value;
     var titleJPN = document.getElementById("txtJaTitle").value;
     var synopsys = document.getElementById("textSynopsis").value;
@@ -43,9 +42,10 @@ function createAnime()
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             writeMessage(title + " has been created successfully :3");
+            //todo - empty the form without reloading the page
         }
     };
-    xmlhttp.open("GET","static/javascript/createAnime.php?id="+id+"&title="+title+"&titleJPN="+titleJPN+"&synopsys="+synopsys+"&genre1="+genre1+"&genre2="+genre2+"&review="+review+"&scoreVisual="+scoreVisual+"&scoreStory="+scoreStory+"&scoreCharacter="+scoreCharacter+"&scorePacing="+scorePacing+"&scoreMusic="+scoreMusic+"&img="+img,true);
+    xmlhttp.open("GET","static/javascript/createAnime.php?title="+title+"&titleJPN="+titleJPN+"&synopsys="+synopsys+"&genre1="+genre1+"&genre2="+genre2+"&review="+review+"&scoreVisual="+scoreVisual+"&scoreStory="+scoreStory+"&scoreCharacter="+scoreCharacter+"&scorePacing="+scorePacing+"&scoreMusic="+scoreMusic+"&img="+img,true);
     xmlhttp.send();
 }
 function modifyAnime()
@@ -74,6 +74,19 @@ function modifyAnime()
         }
     };
     xmlhttp.open("GET","static/javascript/modifyAnime.php?id="+id+"&title="+title+"&titleJPN="+titleJPN+"&synopsys="+synopsys+"&genre1="+genre1+"&genre2="+genre2+"&review="+review+"&scoreVisual="+scoreVisual+"&scoreStory="+scoreStory+"&scoreCharacter="+scoreCharacter+"&scorePacing="+scorePacing+"&scoreMusic="+scoreMusic+"&img="+img,true);
+    xmlhttp.send();
+}
+function deleteAnime()
+{
+    var id = document.getElementById("idAnime").value;
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            writeMessage(title + " has been deleted successfully ;3;");
+        }
+    };
+    xmlhttp.open("GET","static/javascript/deleteAnime.php?id="+id,true);
     xmlhttp.send();
 }
 

@@ -1,3 +1,6 @@
+<?php
+    //todo - create a tblAbout so the data are not hard coded
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,19 +22,28 @@
             <h2>About me</h2>
         </div>
         <div class="paraText">
-            <p>Insert Text Here</p>
+            <?php
+                //todo - do a mysql request to get the aboutMe and echo it inside a <p>
+            ?>
+            <p>My name is Jacob and I'm a student at Cégep de Jonquière. I love playing video games and watching animes :D</p>
         </div>
         <div class="borderPara text-center">
             <h2>My Achievements and Experiences</h2>
         </div>
         <div class="paraText">
-            <p>STAS : My job was to install specific software depending on </p>
+            <?php
+                //todo - do a mysql request to get the achievements and echo it inside a <p>
+            ?>
+            <p>STAS : I was an IT and my main job was to install softwares on new Laptops/PCs. When I was waiting for the software to install, I created a Powershell ISE script that installs softwares automatically, and this script was saving hours of work!</p>
         </div>
         <div class="borderPara text-center">
             <h2>Language I have experience with</h2>
         </div>
         <div class="paraText">
-            <p>C# C++ Html/CSS/Javascript/PHP MySql SqlServer PowerShell ISE</p>
+            <?php
+                //todo - do a mysql request to get the experiences and echo it inside a <p>
+            ?>
+            <p>C#/C++ - Html/CSS/Javascript/PHP - MySql/SqlServer - PowerShell ISE</p>
         </div>
     </div>
 </div>

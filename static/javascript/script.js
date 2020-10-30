@@ -157,10 +157,30 @@ function modifyAnimeHTML()
 function deleteAnimeHTML()
 {
     clearHTML();
+    var html = '<div class="para2 lead">\n' +
+        '<div class="borderPara text-center">\n' +
+        '<h2>Delete Anime</h2>\n' +
+        '</div>\n' +
+        '<form action="#" onsubmit="deleteAnime();return false">\n' +
+        '<div class="animeList">\n' +
+        '</div>\n' +
+        '<input type="submit" value="Delete" class="centeredButton">\n' +
+        '</form>\n' +
+        '</div>\n';
+
+    document.getElementById('data').innerHTML += html;
+
+    $.ajax({
+        url: 'static/javascript/animeList.php',
+        success: function(data) {
+            $('.animeList').html(data);
+        }
+    });
 }
 function viewStatsHTML()
 {
     clearHTML();
+
 }
 function clearHTML()
 {
